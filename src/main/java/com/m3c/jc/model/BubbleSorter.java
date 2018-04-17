@@ -2,9 +2,7 @@ package com.m3c.jc.model;
 
 public class BubbleSorter implements Sorter {
 
-    public BubbleSorter() {
-    }
-
+    //Defines a 'sortArray' method, as per 'Sorter' interface
     public int[] sortArray(int[] array) {
         boolean swapped = true;
 

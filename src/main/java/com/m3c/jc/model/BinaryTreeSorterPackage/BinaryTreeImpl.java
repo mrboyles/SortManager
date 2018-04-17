@@ -29,6 +29,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     public void addElement(int element) {
+        //Assigns the relevant node a left/right child which is a node of value given
         Node node = new Node(element);
         if (nodeCount == 0) {
             this.setRootNode(node);
@@ -59,6 +60,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     public boolean findElement(int value) {
+        //Traverses binary tree to infer if value exists in binary tree
         Node currentNode = getRootNode();
         boolean foundElement = false;
         while (currentNode != null && !foundElement) {
@@ -74,6 +76,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     public int getLeftChild(int element) throws ElementNotFoundException {
+        //Traverses to element given and returns left child's value, if exists
         if (findElement(element)) {
             Node currentNode = getRootNode();
             while (currentNode.getValue() != element) {
@@ -96,6 +99,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     public int getRightChild(int element) throws ElementNotFoundException {
+        //Traverses to element given and returns right child's value, if exists
         if (findElement(element)) {
             Node currentNode = getRootNode();
             while (currentNode.getValue() != element) {
@@ -118,6 +122,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     private List<Integer> setSortedTreeAsc(Node node) {
+        //Recursively sorts binary tree into ascending order
         List<Integer> list = new ArrayList<Integer>();
         if (node.isLeftNode()) {
             list.addAll(setSortedTreeAsc(node.getLeftNode()));
@@ -130,6 +135,7 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     private List<Integer> setSortedTreeDesc(Node node) {
+        //Recursively sorts binary tree into descending order
         List<Integer> list = new ArrayList<Integer>();
         if (node.isRightNode()) {
             list.addAll(setSortedTreeDesc(node.getRightNode()));

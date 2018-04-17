@@ -12,9 +12,11 @@ public class SortManager {
 
     public void sortArray() {
         try {
+            //Creates, and then sorts a randomly generated array of 10 integers
             Sorter sorter = SortFactory.getInstance();
             int[] arrayToSort = createArray(10);
             DisplayManager.displayUnsorted(sorter, arrayToSort);
+            //The sorter is timed for analysis
             long start = System.nanoTime();
             int[] sortedArray = sorter.sortArray(arrayToSort);
             long end = System.nanoTime();
@@ -26,6 +28,7 @@ public class SortManager {
         }
     }
 
+    //For creating random array of integers
     private int[] createArray(int size) {
         Random random = new Random();
         int[] unsortedArray = new int[size];

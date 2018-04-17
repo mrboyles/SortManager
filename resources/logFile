@@ -1,6 +1,0 @@
-10-04-2018 10:11:12 INFO [main] Starter - Logging initialised
-10-04-2018 10:11:12 DEBUG [main] SortFactory - Exception thrown: Sorry but there is no sorter called 'meeerge'
-10-04-2018 10:12:18 INFO [main] Starter - Logging initialised
-10-04-2018 10:12:18 DEBUG [main] SortFactory - Exception thrown: Sorry but there is no sorter called 'buuubble'
-10-04-2018 10:12:39 INFO [main] Starter - Logging initialised
-10-04-2018 10:12:39 INFO [main] SortManager - Sort performed using Bubble Sorter

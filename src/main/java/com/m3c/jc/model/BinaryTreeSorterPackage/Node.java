@@ -2,6 +2,10 @@ package com.m3c.jc.model.BinaryTreeSorterPackage;
 
 public class Node {
 
+    //Class describing each node in the binary tree
+    //Each node has a value assigned to it
+    //Each node can have a left and right child node associated
+
     private int value;
     private Node leftNode;
     private Node rightNode;

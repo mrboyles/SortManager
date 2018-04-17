@@ -2,6 +2,7 @@ package com.m3c.jc.model;
 
 public class MergeSorter implements Sorter{
 
+    //Defines a 'sortArray' method, as per 'Sorter' interface
     private int[] merge(int[] left, int[] right) {
         if (left.length != 0 && right.length != 0) {
             int[] merged = new int[left.length + right.length];

@@ -2,6 +2,7 @@ package com.m3c.jc.model.BinaryTreeSorterPackage;
 
 import java.util.List;
 
+//Interface for implementation of a binary tree sorter
 public interface BinaryTree {
     int getRootElement();
 

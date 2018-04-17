@@ -3,7 +3,6 @@ package com.m3c.jc.control;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-
 public class Starter {
 
     static final String LOG_PROPERTIES_FILE = "resources/log4j.properties";
